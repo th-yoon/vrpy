@@ -208,6 +208,7 @@ class _MasterSolvePulp(_MasterProblemBase):
                     msg=False,
                     timeLimit=time_limit,
                     options=["startalg", "barrier", "crossover", "0"],
+                    threads=100,
                 )
             )
         elif self.solver == "cplex":
